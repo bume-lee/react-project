@@ -1,13 +1,15 @@
 import React from 'react';
 
-export default function Headers() {
+export default function Header({ score, bestScore }) {
   return (
-    <div className="heading">
+    <header className="heading">
       <h1 className="title">2048</h1>
       <div className="scores-container">
-        <div className="score-container">1304</div>
-        <div className="best-container">1304</div>
+        <div className="score-container" style={{ marginRight: 5 }}>
+          {score}
+        </div>
+        <div className="best-container">{bestScore}</div>
       </div>
-    </div>
+    </header>
   );
 }
