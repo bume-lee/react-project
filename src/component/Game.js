@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import times from 'lodash/times';
 import { MAX_POS } from '../constant';
 import { getInitialTileList } from '../util/tile';
-import userMoveTile from '../hook/userMoveTile';
+import useMoveTile from '../hook/useMoveTile';
 
 export default function Game() {
   const [tileLIst, setTileLIst] = useState(getInitialTileList);
   //up,down,lef,right
 
-  userMoveTile(); //hook
+  useMoveTile(); //hook
 
   return (
     <div className="game-container">

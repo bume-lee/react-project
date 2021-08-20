@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { addKeyObserver } from '../util/keyboard';
 
-export default function userMoveTile() {
+export default function useMoveTile() {
   useEffect(() => {
     addKeyObserver('up', () => {
       console.log('up');
