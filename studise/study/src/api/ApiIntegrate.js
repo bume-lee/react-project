@@ -12,7 +12,7 @@ async function getApiData() {
   return response.data;
 }
 
-export default function ApiIntegrate({ id }) {
+export default function ApiIntegrate() {
   const [userId, setUserId] = useState(null);
   const [state, refetch] = useAsync(getApiData, [], true);
 
